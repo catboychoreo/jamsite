@@ -10,7 +10,7 @@ body {
 
 
 
-#title {
+.title {
     font-size: 40px;
     animation: color-change 1s infinite;
 }
@@ -77,15 +77,15 @@ body {
 
 @keyframes color-change-two {
     0% {
-        color: #1AC819;
+        color: blue;
     }
 
     50% {
-        color: white;
+        color: yellow;
     }
 
     100% {
-        color: #1AC819;
+        color: blue;
     }
 }
 
@@ -118,34 +118,6 @@ body {
     width: 50%;
     padding: 5px;
     background-color: white;
-}
-
-#center-evil {
-    border: black solid;
-    margin: auto;
-    width: 50%;
-    padding: 5px;
-    background-color: red;
-}
-
-#center2-evil {
-    border: black solid;
-    margin: auto;
-    width: 50%;
-    padding: 5px;
-    background-color: red;
-}
-
-#center3-evil {
-    border: black solid;
-    margin: auto;
-    width: 50%;
-    padding: 5px;
-    background-color: red;
-}
-
-#list4-evil {
-    color: #008282;
 }
 
 .embed-container { 
