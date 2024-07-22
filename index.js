@@ -1,5 +1,5 @@
 // countdown
-const countdownDate = new Date("May 23, 2024 15:20:00").getTime()
+const countdownDate = new Date("Aug 16, 2024 7:45:00").getTime()
 const x = setInterval(function () {
   const now = new Date().getTime();
   const distance = countdownDate - now;
@@ -101,3 +101,19 @@ fishyFishy.onclick = function () {
   clearInterval(moveInterval)
   fishyFishy.style.left = '-600px'
 };
+
+const countdownDate2 = new Date("Aug 16, 2025 7:45:00").getTime()
+const x2 = setInterval(function () {
+  const now2 = new Date().getTime();
+  const distance2 = countdownDate2 - now2;
+  var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+  var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+  document.getElementById("countdownclock2").innerHTML = days2 + "d " + hours2 + "h "
+    + minutes2 + "m " + seconds2 + "s ";
+  if (distance2 < 0) {
+    clearInterval(x2);
+    document.getElementById("countdownclock2").innerHTML = "School's out!"
+  }
+}, 1000);

@@ -15,6 +15,7 @@ body {
     animation: color-change 1s infinite;
 }
 
+
 @keyframes color-change {
     0% {
         color: #A20000;
@@ -136,4 +137,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+#the-countdown2 {
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: .5px black;
+}
+
+#countdownclock2 {
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: .5px black;
 }
